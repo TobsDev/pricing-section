@@ -8,7 +8,7 @@ const Cards = () => (
         {jsonData.cards.map((card) => {
             return <Card 
                     package={card.package}
-                    price={card.price}
+                    price={card.price.monthly}
                     storage={card.storage}
                     users={card.users}
                     upload={card.upload}
