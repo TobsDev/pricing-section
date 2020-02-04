@@ -1,0 +1,18 @@
+// importing google font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import '../abstracts/variables';
+
+$montserrat: 'Montserrat';
+
+body {
+    font-size: 15px;
+    font-family: $montserrat;
+}
+
+h1 {
+    font-size: 1.975rem;
+}
+
+button {
+    font-size: 0.75rem;
+}

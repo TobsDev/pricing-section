@@ -1,0 +1,108 @@
+ .card {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background: white;
+    height: 453px;
+    width: 325px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+} 
+
+.card__package {
+    font-size: 1.125rem;
+    color: $grayish-blue;
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+}
+
+.card__price {
+    font-size: 4.75rem;
+    color: $dark-grayish-blue;
+    padding-bottom: 2rem;
+}
+
+.card__currency {
+    font-size: 2.675rem;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+}
+
+.card__table,  {
+    position: relative;
+    margin: 0 auto;
+    height: 160px;
+    width: 80%;
+    margin-bottom: 2rem;
+    color: $grayish-blue;
+}
+
+.card__storage, .card__users, .card__upload {
+    font-size: 1rem;
+    
+    vertical-align: middle;
+    position: relative;
+}
+
+.card__storage::before, .card__users::before, .card__upload::before {
+    content: '';
+    height: 1px;
+    background-color: $light-brayish-blue;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+}
+
+.card__upload::after {
+    content: '';
+    height: 1px;
+    background-color: $light-brayish-blue;
+    padding: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+}
+
+.card__cta {
+    width: 80%;
+    height: 2.75rem;
+    border-radius: 5px;
+    background: $linear-gradient-horizontal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.card--active {
+    background: $linear-gradient-vertical;
+} 
+
+.card--active .card__package , .card--active .card__price, .card--active .card__table {
+    color: white;
+}
+
+.card--active .card__cta {
+    color: $purple;
+    background: white;
+}
+
+.card--active .card__storage::before, .card--active .card__users::before, .card--active .card__upload::before, .card--active .card__upload::after {
+    background-color: $very-light-grayish-blue;
+}
+
+@media (min-width: 3000px) {
+    .card--active.card {
+        margin: 0 auto;
+        background: white;
+        height: 500px;
+        width: 325px;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    } 
+}

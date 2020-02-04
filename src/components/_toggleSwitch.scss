@@ -1,0 +1,13 @@
+.switch {
+    white-space: nowrap;
+    margin-bottom: 80px;
+}
+
+.switch__labelLeft, .switch__labelRight {
+    color: $light-brayish-blue;
+    display: inline-block;
+}
+
+.switch__btn {
+    display: inline-block;
+}

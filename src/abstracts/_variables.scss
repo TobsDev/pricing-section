@@ -1,0 +1,15 @@
+// Neutral Colors
+$very-light-grayish-blue: hsl(240, 78%, 98%);
+$light-brayish-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+
+// Primary Color
+$linear-gradient-horizontal: linear-gradient(270deg, rgba(105,111,221,1) 0%, rgba(163,168,240,1) 100%);
+$linear-gradient-vertical: linear-gradient(180deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+$purple: rgba(105,111,221,1);
+
+body {
+    background-color: $very-light-grayish-blue;
+}
+

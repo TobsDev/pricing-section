@@ -1,0 +1,25 @@
+.pricing {
+    margin: 0 auto;
+    padding-top: 65px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing__background {
+    background-color: $very-light-grayish-blue;
+    background-image: url('../images/bg-top.svg');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+
+.pricing__heading {
+    color: $grayish-blue;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
