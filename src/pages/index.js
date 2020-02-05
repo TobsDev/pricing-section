@@ -20,10 +20,12 @@ class IndexPage extends React.Component {
   render () {
     return (
       <div className="pricing" id="pricing">
-        <div className="pricing__background"></div>
+        <div className="pricing__background-top"></div>
+        
         <h1 className="pricing__heading">Our Pricing</h1>
         <Switch togglePricing={this.togglePricing}/>
         <Cards pricing={this.state.monthlyPricing ? "monthly" : "annually"}/>
+        <div className="pricing__background-bottom"></div>
       </div>
     );
   }

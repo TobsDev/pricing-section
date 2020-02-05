@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = (props) => (
-    <div className={`card ${props.active}`}>
+    <div className={`card ${props.active} card__${props.package.toLowerCase()}`}>
       <h2 className="card__package">{props.package}</h2>
       <h3 className="card__price"><span className="card__currency">$ </span>{props.price}</h3>
       <table className="card__table">

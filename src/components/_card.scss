@@ -6,7 +6,25 @@
     width: 325px;
     border-radius: 10px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 2;
 } 
+
+@media (min-width: 1100px) {
+    
+}
+
+.card__basic {
+    grid-area: basic;
+}
+
+.card__professional {
+    grid-area: professional;
+    
+}
+
+.card__master {
+    grid-area: master;
+}
 
 .card__package {
     font-size: 1.125rem;
@@ -39,7 +57,6 @@
 
 .card__storage, .card__users, .card__upload {
     font-size: 1rem;
-    
     vertical-align: middle;
     position: relative;
 }
@@ -96,13 +113,19 @@
     background-color: $very-light-grayish-blue;
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 1100px) {
+    .card {
+        margin-bottom: 0;
+    }
+
     .card--active.card {
-        margin: 0 auto;
-        background: white;
         height: 500px;
-        width: 325px;
-        border-radius: 10px;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     } 
+    .card__professional {
+        z-index: 1;
+    }
+
+    .card--active .card__package  {
+        padding-top: 3.75rem;
+    }
 }
