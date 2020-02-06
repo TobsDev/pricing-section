@@ -4,7 +4,7 @@ class ToggleSwitch extends React.Component {
     
 
     render() {
-        const{ togglePricing, test } = this.props;
+        const{ togglePricing } = this.props;
 
         return (
             <div className="switch">
